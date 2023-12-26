@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="static/style.css" />
+    <link rel="shortcut icon" href="static/mages/fav-icon.png" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>eGrocery Store</title>
+  </head>
+  <body>
+    <!--==Navigation================================-->
+    <nav class="navigation">
+      <!--logo-------->
+      <a href="/" class="logo"> <span>e</span>Grocery </a>
+      <!--menu-btn---->
+      <input type="checkbox" class="menu-btn" id="menu-btn" />
+      <label for="menu-btn" class="menu-icon">
+        <span class="nav-icon"></span>
+      </label>
+
+      <!--menu-------->
+
+      <ul class="menu">
+        <li><a href="/" class="active">Home</a></li>
+        <li><a href="/add_item">Add Product</a></li>
+        <li><a href="/table">Products List</a></li>
+      </ul>
+
+      <!--right-nav-(cart-like)-->
+
+      <div class="right-nav">
+        
+        <!--cart----->
+        <a href="#" class="cart">
+          <i class="fas fa-shopping-cart"></i>
+          <span>0</span>
+        </a>
+      </div>
+    </nav>
+
+    <!--nav-end--------------------->
+
+    <!--==Search-banner=======================================-->
+    <section id="search-banner">
+      <!--bg--------->
+      <img src="images/bg-1.png" class="bg-1" alt="bg" />
+      <img src="static/mages/bg-2.png" class="bg-2" alt="bg-2" />
+      <!--text------->
+      <div class="search-banner-text">
+        <h1>Basic Groceries System</h1>
+        <strong>#admin</strong>
+        <!--search-box------>
+        <form action="" class="search-box">
+          <!--icon------>
+          <i class="fas fa-search"></i>
+          <!--input----->
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search your daily groceries"
+            name="search"
+            required
+          />
+          <!--btn------->
+          <input type="submit" class="search-btn" value="Search" />
+        </form>
+      </div>
+    </section>
+    <!--search-banner-end--------------->
+    
+    <!--==Products====================================-->
+    <section id="popular-product">
+      <!--heading----------->
+      <div class="product-heading">
+        <h3>Product Summary</h3>
+        <span>All</span>
+      </div>
+      <!--box-container------>
+      <div class="product-container">
+        <!--box---------->
+        <div class="product-box">
+          <img src="static\images\apple.png" alt="apple" />
+          <strong>Total Item</strong>
+          <span class="quantity"></span>
+          <span class="price">{{ no_of_iem }}</span>
+          <!--cart-btn------->
+          
+          <!--like-btn------->
+          
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="static\images\chili.png" alt="apple" />
+          <strong>Total Quantity</strong>
+          <span class="quantity"></span>
+          <span class="price">{{total_quantity}}</span>
+          <!--cart-btn------->
+          
+          
+        </div>
+        <!--box---------->
+        <div class="product-box">
+          <img src="static\images\apple.png" alt="apple" />
+          <strong>Last Item</strong>
+          <span class="quantity"></span>
+          <span class="price">{{lastitem}}</span>
+          <!--cart-btn------->
+
+          <!--like-btn------->
+          
+        </div>
+      </div>
+    </section>
+    <!--popular-product-end--------------------->
+    
+    <!--==Footer=============================================-->
+    <footer>
+      <div class="footer-container">
+        <!--logo-container------>
+        <div class="footer-logo">
+          <a href="#"><span>e</span>Grocery</a>
+          <!--social----->
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Product</strong>
+          <ul>
+            <li><a href="#">Groceries</a></li>
+            <li><a href="#">New</a></li>
+          </ul>
+        </div>
+        <!--links------------------------->
+        <div class="footer-links">
+          <strong>Category</strong>
+          <ul>
+            <li><a href="#">Beauty</a></li>
+            <li><a href="#">Cream</a></li>
+            <li><a href="#">Soap</a></li>
+            <li><a href="#">Girls product</a></li>
+          </ul>
+        </div>
+        <!--links-------------------------->
+        <div class="footer-links">
+          <strong>Contact</strong>
+          <ul>
+            <li><a href="#">Phone : +916388574919</a></li>
+            <li><a href="#">Email : sanjayyadav11210@gmail.com</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
